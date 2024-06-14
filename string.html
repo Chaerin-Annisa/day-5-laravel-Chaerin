@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String exercise</title>
+<link rel="stylesheet" href="string.css">
+</head>
+<body>
+    <h1>Latihan String 1</h1>
+    <ol>
+        <li>
+            <label for="formSentence"> Form Sentence</label>
+            <p id="formSentence"></p>
+        </li>
+        <p>JavaScript is awesome and I love it!</p>
+        <li>
+            <label for="breakSentence" >Break Sentence</label>
+            <p id="firstWord"></p>
+            <p id="secondWord"></p>
+            <p id="thirdWord"></p>
+            <p id="fourthWord"></p>
+            <p id="fifthWord"></p>
+            </li>
+            <p>firstWord=JavaScript</p>
+            <p>second word=is</p>
+            <p>third word=awesome</p>
+            <p>fourth word=and</p>
+            <p>fifth word=I</p>
+            <p>sixth word=love</p>
+            <p>seventh word=it!</p>
+
+            <li id="breakWord">
+            <label for="breakWord" >Break Word</label>
+            <p id="firstWord3"></p>
+            <p id="secondWord3"></p>
+            <p id="thirdWord3"></p>
+            <p id="fourthWord3"></p>
+            <p id="fifthWord3"></p>
+            </li>
+            <u1>wow JavaScript is so cool</u1>
+            <p>first word=0,3</p>
+            <p>second word=4,14</p>
+            <p>third word=15,17</p>
+            <p>fourth word=18,20</p>
+            <p>fifth word=21,25</p>
+            <li id="breakWordWithLength">
+            <label for="breakWordWithLength">Break Word with Length</label>
+            <p id="firstWord4"></p>
+            <p id="secondWord4"></p>
+            
+            <p id="thirdWord4"></p>
+            <p id="fourthWord4"></p>
+            <p id="fifthWord4"></p>
+            </li>
+    </ol>
+   
+    <script src="content.JS"></script>
+    <script>
+        var kalimat = 'wow JavaScript is so cool';
+        var KataPertama = "wow"; 
+        var kataKedua = "JavaScript";
+        var kataKetiga ="is"; 
+        var kataKeempat = "so";
+        var kataKelima = "cool";
+        console.log(kalimat);
+        console.log(KataPertama[0]+KataPertama[1]+KataPertama[2]);
+        console.log(kataKedua[0]+kataKedua[1]+kataKedua[2]+kataKedua[3]+kataKedua[4]+kataKedua[5]+kataKedua[6]+kataKedua[7]+kataKedua[8]+kataKedua[9]);
+        console.log(kataKetiga[0]+kataKetiga[1]);
+        console.log(kataKeempat[0]+kataKeempat[1]);
+        console.log(kataKelima[0]+kataKelima[1]+kataKelima[2]+kataKelima[3]);
+    </script>
+    <script>
+        var kalimat3 = 'wow JavaScript is so cool';
+var Pertama = kalimat3.substring(0, 3);
+var kedua =kalimat3.substring(4,14);
+var ketiga =kalimat3.substring(15,17);
+var keempat =kalimat3.substring(18,20);
+var kelima =kalimat3.substring(21,25);
+console.log(Pertama);
+console.log(kedua);
+console.log(ketiga);
+console.log(keempat);
+console.log(kelima);
+    </script>
+    <script>
+        var kalimat4 = 'wow JavaScript is so cool';
+var KataPertama4 = kalimat4.substr(0, 3);
+var KataKedua4 =kalimat4.substring(4,14);
+var KataKetiga4 =kalimat4.substring(15,17);
+var KataKeempat4 =kalimat4.substring(18,20);
+var KataKelima4 =kalimat4.substring(21,25);
+console.log(KataPertama4[0,3]);
+console.log(KataKedua4[4,14]);
+console.log(KataKetiga4[15,17]);
+console.log(KataKeempat4[18,20]);
+console.log(KataKelima4[21,25]);
+var KataPertama4 =KataPertama4;
+var kataKedua4 =KataKedua4;
+var kataKetiga4 =KataKetiga4;
+var kataKeempat4 =KataKeempat4;
+var kataKelima4 =KataKelima4;
+document.getElementById("firstWord4").innerHTML = "First Word : " + KataPertama4 + ', 3: ' 
+document.getElementById("secondWord4").innerHTML = "Second Word : " +kataKedua4 + ', 10: ' 
+document.getElementById("thirdWord4").innerHTML = "Third Word : " + kataKetiga4 + ', 2: ' 
+document.getElementById("fourthWord4").innerHTML = "Fourth Word : " + kataKeempat4 + ', 2: '
+document.getElementById("fifthWord4").innerHTML = "Fifth Word : " + kataKelima4 + ', 4: ' 
+    </script>
+</body>
+</html>
